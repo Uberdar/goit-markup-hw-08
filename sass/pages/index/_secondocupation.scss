@@ -1,0 +1,20 @@
+.ocupation-list {
+  display: flex;
+}
+.ocupation-list__unit:not(:last-child) {
+  margin-right: 30px;
+}
+
+.ocupation-list__svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: var(--button-bg-color);
+  height: 120px;
+  margin-bottom: 30px;
+  svg {
+    width: 70px;
+    height: 70px;
+  }
+}

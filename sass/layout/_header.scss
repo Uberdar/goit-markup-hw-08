@@ -1,0 +1,105 @@
+/* header */
+.logo {
+  color: var(--primary-black-color);
+  text-decoration: none;
+  font-size: 26px;
+  /* 31 / 26 ~ 1.19 */
+  line-height: 1.19;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+
+  .logo-accent {
+    color: var(--accent-txt-color);
+  }
+}
+
+header {
+  border-bottom: 1px solid var(--border-bottom-for-nav);
+  .container {
+    display: flex;
+    align-items: center;
+  }
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 70px;
+}
+.site-nav__unit {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+  a {
+    display: inline-block;
+    color: var(--title-txt-color);
+    text-decoration: none;
+    padding: 32px 0px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  a:hover,
+  a:focus {
+    color: var(--accent-txt-color);
+  }
+  .current {
+    color: var(--accent-txt-color);
+    position: relative;
+  }
+}
+
+header {
+  ul {
+    font-weight: 500;
+  }
+  .header-contacts__link:hover,
+  .header-contacts__link:focus {
+    color: var(--accent-txt-color);
+    fill: var(--accent-txt-color);
+  }
+  .header-contacts__link {
+    color: var(--primary-txt-color);
+    text-decoration: none;
+    fill: var(--primary-txt-color);
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.mail,
+.tel {
+  display: flex;
+  align-items: center;
+}
+.header-contacts__icon{
+  margin-right: 10px;
+}
+
+.current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-txt-color);
+}
+
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+  .header-contacts__unit:not(:last-child) {
+    margin-right: 30px;
+  }
+// .header-contacts__unit + .header-contacts__unit {
+//   margin-left: 15px;
+// }
+}
+
+/* header end */

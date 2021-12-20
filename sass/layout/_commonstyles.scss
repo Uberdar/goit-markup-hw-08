@@ -1,0 +1,40 @@
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    width: 270px;
+  }
+  .button {
+    color: var(--title-txt-color);
+    font-family: inherit;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.63;
+    padding: 6px 22px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--button-bg-color);
+  
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .title {
+    color: var(--title-txt-color);
+  }
+
+.visually-hidden,
+.visually-hidden.title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
