@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+
+   <header class="header">
       <div class="container">
         <nav class="nav">
           <a href="./index.html" class="logo"
@@ -53,8 +54,59 @@
             >
           </li>
         </ul>
+        <button type="button" class="burger-open">
+          <svg class="burger-open__svg">
+            <use href="images/index/icons.svg#icon-menu"></use>
+
+          </svg>
+        </button>
       </div>
-    </header>
+      <div class="mob-menu visually-hidden">
+        <div class="mob-container">
+          <div class="mob-menu__top">
+        <button type="button" class="burger-close">
+          <svg class="burger-close__svg">
+          <use href="images/index/icons.svg#icon-close_menu"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-list">
+          <li class="mob-menu-list__unit">
+            <a  href="./index.html">Студия</a>
+          </li>
+          <li class="mob-menu-list__unit">
+            <a href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="mob-menu-list__unit"><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+        <div class="mob-menu__bottom">
+        <ul class="mob-contacts">
+          <li class="mob-contacts__unit">
+            <a class="mob-contacts__link tel" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mob-contacts__unit">
+            <a
+              class="mob-contacts__link mail"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com</a
+            >
+          </li>
+
+        </ul>
+        <ul class="mob-hot-links">
+          <li class="mob-hot-links__unit"><a href="">Instagram</a></li>
+          <li class="mob-hot-links__unit"><a href="">Twitter</a></li>
+          <li class="mob-hot-links__unit"><a href="">Facebook</a></li>
+          <li class="mob-hot-links__unit"><a href="">LinkedIn</a></li>
+
+        </ul>
+      </div>
+      </div>
+      </div>
+    </header> 
 
     <main>
       <section class="business-solutions section">
@@ -72,7 +124,7 @@
         </div>
       </section>
 
-      <section class="ocupation section">
+       <section class="ocupation section">
         <div class="container">
           <h2 class="visually-hidden title">Род занятий</h2>
           <ul class="ocupation-list">
@@ -129,6 +181,7 @@
           </ul>
         </div>
       </section>
+
       <section class="ocupation-pics section">
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
@@ -172,7 +225,15 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__unit">
-              <img src="./images/index/unitone.jpg" alt="worker" width="270" />
+              <picture>
+                <source srcset="./images/index/fourthteam/igor/igor-min.jpg 1x,
+                ./images/index/fourthteam/igor/igor-2x-min.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/index/fourthteam/igor/igor-tablet-min.jpg 1x,
+                ./images/index/fourthteam/igor/igor-tablet-2x-min.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/index/fourthteam/igor/igor-mob-min.jpg 1x,
+                ./images/index/fourthteam/igor/igor-mob-2x-min.jpg 2x" media="(min-width:320px)">
+                <img src="./images/index/fourthteam/igor/igor-mob-min.jpg" alt="worker" >
+              </picture>
               <div class="team-list__box">
                 <h3 class="title team-list__unit-name">Игорь Демьяненко</h3>
                 <p class="team-list__position">Product Designer</p>
@@ -215,7 +276,15 @@
               </div>
             </li>
             <li class="team-list__unit">
-              <img src="./images/index/unittwo.jpg" alt="worker" width="270" />
+              <picture>
+                <source srcset="./images/index/fourthteam/olga/olga-min.jpg 1x,
+                ./images/index/fourthteam/olga/olga-2x-min.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/index/fourthteam/olga/olga-tablet-min.jpg 1x,
+                ./images/index/fourthteam/olga/olga-tablet-2x-min.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/index/fourthteam/olga/olga-mob-min.jpg 1x,
+                ./images/index/fourthteam/olga/olga-mob-2x-min.jpg 2x" media="(min-width:320px)">
+                <img src="./images/index/fourthteam/olga/olga-mob-min.jpg" alt="worker" >
+              </picture>
               <div class="team-list__box">
                 <h3 class="title team-list__unit-name">Ольга Репина</h3>
                 <p class="team-list__position">Frontend Developer</p>
@@ -258,11 +327,15 @@
               </div>
             </li>
             <li class="team-list__unit">
-              <img
-                src="./images/index/unitthree.jpg"
-                alt="worker"
-                width="270"
-              />
+              <picture>
+                <source srcset="./images/index/fourthteam/nick/nick-min.jpg 1x,
+                ./images/index/fourthteam/nick/nick-2x-min.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/index/fourthteam/nick/nick-tablet-min.jpg 1x,
+                ./images/index/fourthteam/nick/nick-tablet-2x-min.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/index/fourthteam/nick/nick-mob-min.jpg 1x,
+                ./images/index/fourthteam/nick/nick-mob-2x-min.jpg 2x" media="(min-width:320px)">
+                <img src="./images/index/fourthteam/nick/nick-mob-min.jpg" alt="worker" >
+              </picture>
               <div class="team-list__box">
                 <h3 class="title team-list__unit-name">Николай Тарасов</h3>
                 <p class="team-list__position">Marketing</p>
@@ -305,7 +378,15 @@
               </div>
             </li>
             <li class="team-list__unit">
-              <img src="./images/index/unitfour.jpg" alt="worker" width="270" />
+              <picture>
+                <source srcset="./images/index/fourthteam/misha/misha-min.jpg 1x,
+                ./images/index/fourthteam/misha/misha-2x-min.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/index/fourthteam/misha/misha-tablet-min.jpg 1x,
+                ./images/index/fourthteam/misha/misha-tablet-2x-min.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/index/fourthteam/misha/misha-mob-min.jpg 1x,
+                ./images/index/fourthteam/misha/misha-mob-2x-min.jpg 2x" media="(min-width:320px)">
+                <img src="./images/index/fourthteam/misha/misha-mob-min.jpg" alt="worker" >
+              </picture>
               <div class="team-list__box">
                 <h3 class="title team-list__unit-name">Михаил Ермаков</h3>
                 <p class="team-list__position">UI Designer</p>
@@ -350,6 +431,7 @@
           </ul>
         </div>
       </section>
+
       <section class="constant-clients section">
         <div class="container">
           <h2 class="constant-clients__header title">Постоянные клиенты</h2>
@@ -398,11 +480,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> 
     </main>
 
     <footer class="footer">
       <div class="container">
+        <div class="footer__two-sections">
         <div class="left-footer">
           <a href="./index.html" class="logo"
             ><span class="logo-accent">Web</span>Studio</a
@@ -462,6 +545,7 @@
             </li>
           </ul>
         </div>
+      </div>
         <div class="subscribe">
           <form class="subscribe__form">
             <h2 class="subscribe__header">Подпишитесь на рассылку</h2>
@@ -551,6 +635,11 @@
         </form>
       </div>
     </div>
+
+    
+
+
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
