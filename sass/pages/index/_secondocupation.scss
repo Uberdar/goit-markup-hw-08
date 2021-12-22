@@ -38,8 +38,10 @@
     margin-bottom: 0;
   }
   .ocupation-list__unit {
-    margin: 15px;
-    width: calc(100% / 2 - 4 * 15px);
+    width: 354px;
+  }
+  .ocupation-list__unit:nth-child(odd) {
+    margin-right: 30px;
   }
   .ocupation-list__title {
     text-align: left;
@@ -47,13 +49,17 @@
 }
 @media screen and (min-width: 1200px) { 
   .ocupation-list__unit:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 0px;
   }
 
   .ocupation-list {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    justify-content: space-between;
+  }
+  .ocupation-list__unit {
+    width: 270px;
   }
   
 }

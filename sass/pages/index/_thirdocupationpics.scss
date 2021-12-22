@@ -2,16 +2,17 @@
   display: none;
   @media screen and (min-width: 1200px) { 
     display: block;
+
   }
   &.section {
     padding-top: 0px;
   }
   .title {
-    font-size: 36px;
+    font-size: 28px;
     /* line height 42 / font size 36 = ~1.17 */
     line-height: 1.17;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
@@ -51,3 +52,7 @@
 
   color: var(--primary-white-color);
 }
+
+
+
+

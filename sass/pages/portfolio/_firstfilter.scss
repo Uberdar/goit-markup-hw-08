@@ -1,10 +1,14 @@
 /* portfolio */
-
+.filter {
+  &.section {
+    padding: 60px 0;
+  }
+}
 .filter-buttons{
   display: flex;
   flex-wrap: wrap;
   justify-content:flex-start;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   li:not(:last-child) {
     margin-right: 8px;
   }
@@ -44,7 +48,9 @@
     transform: translateY(0);
   }
 }
-
+.filter-list__list-unit:not(:last-child) {
+  margin-bottom: 30px;
+}
 .list-unit__content {
   padding: 20px 24px;
 }
@@ -103,14 +109,20 @@
     }
   }
   @media screen and (min-width:1200px) {
+    .filter {
+      &.section {
+        padding: 94px 0;
+      }
+    }
     .filter-buttons {
       margin-bottom: 50px;
     }
     .filter-list {
+      justify-content: center;
       margin: -15px;
     }
     .filter-list__list-unit {
-      width: 354px;
+      width: 370px;
       margin: 15px;
     }
     .filter-list__list-unit:not(:last-child) {
