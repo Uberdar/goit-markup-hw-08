@@ -791,6 +791,9 @@ header .header-contacts__link {
   .ocupation-list__unit {
     width: 270px;
   }
+  .ocupation.section {
+    padding: 94px 0;
+  }
 }
 
 .ocupation-pics {
@@ -808,11 +811,11 @@ header .header-contacts__link {
 }
 
 .ocupation-pics .title {
-  font-size: 28px;
+  font-size: 36px;
   /* line height 42 / font size 36 = ~1.17 */
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .ocupation-pics-block {
